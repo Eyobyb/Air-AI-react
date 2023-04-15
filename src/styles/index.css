@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #16171b;
+  padding: 20px;
+  width: 100%;
+}
+
+.inside-container {
+  width: 100%;
+  max-width: 700px;
+  /* min-width: 100%; */
+  height: calc(100vh - 40px);
+}
+
+.left-main-container {
+  height: 100%;
+  width: 22%;
+  min-width: 310px;
+}
+
+.inner-left {
+  width: 66%;
+}
+
+.inner-right {
+  width: 34%;
+}
+
+/* For Webkit-based browsers (Chrome, Safari and Opera) */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* For IE, Edge and Firefox */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}

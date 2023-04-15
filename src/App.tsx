@@ -1,25 +1,15 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import ChatContextWrapper from "./context/chatContext";
+import ChatSection from "./module/chatSection";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ChatContextWrapper>
+      <div className="flex justify-center  w-full">
+        <div className="bg-opacity-50 inside-container shadow-sm  flex bg-secondary-background rounded-2xl">
+          <ChatSection />
+        </div>
+      </div>
+    </ChatContextWrapper>
   );
 }
 
