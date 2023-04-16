@@ -50,7 +50,7 @@ const SearcInputField = ({
       <div
         ref={editable}
         onKeyDown={(e) => {
-          if (!e.shiftKey && e.key == "Enter") sendQuery();
+          if (!e.shiftKey && e.key === "Enter") sendQuery();
         }}
         className="textField mr-4 px-5 w-full bg-transparent z-10 text-second-text p-2 focus:outline-none caret-primary "
         contentEditable="true"

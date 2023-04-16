@@ -42,7 +42,7 @@ const ChatBox = ({ data }: { data: Conversation }) => {
             )}
           </div>
         }
-        isBot={data.role == "assistant"}
+        isBot={data.role === "assistant"}
       />
     </>
   );
