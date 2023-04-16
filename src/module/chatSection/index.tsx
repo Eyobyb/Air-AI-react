@@ -35,16 +35,20 @@ const ChatSection = () => {
         ) : (
           <div
             ref={messagesEnd}
-            className="w-full h-full flex items-center justify-center"
+            className="w-full h-full flex   justify-center items-center"
           >
-            <div className="flex flex-col gap-3">
-              <div>
-                <div className="text-center font-extrabold text-7xl">
+            <div className="relative ">
+              <div className="flex flex-col gap-3 justify-between ">
+                <img
+                  src={img_url}
+                  className="rounded-xl min-w-[300px] w-full opacity-5"
+                  alt="ai avatar"
+                />
+
+                <div className="absolute w-full h-full flex justify-center items-center text-green-400 font-extrabold text-5xl">
                   Talk with <span>AirAI</span>
                 </div>
               </div>
-       
-              <img src={img_url} className="rounded-xl" alt="ai avatar" />
             </div>
           </div>
         )}
